@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule">
+    <sys_data_policy_rule action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>game_name</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_data_policy_rule</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-27 03:11:01</sys_created_on>
+        <sys_data_policy display_value="Sets the game_name field to mandatory">0fca26f41b631010dca897d7bd4bcb2f</sys_data_policy>
+        <sys_id>43ca26f41b631010dca897d7bd4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>game_name</sys_name>
+        <sys_package display_value="Sport" source="x_532560_sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_scope>
+        <sys_update_name>sys_data_policy_rule_43ca26f41b631010dca897d7bd4bcb32</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-27 03:11:01</sys_updated_on>
+        <table>x_532560_sport_data</table>
+    </sys_data_policy_rule>
+</record_update>

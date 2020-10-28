@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>比赛完成后计算人均费用，按照参赛用户扣取费用</description>
+        <field>sys_class_name</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Deduct the cost</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+	//1.计算人均费用
+   var changdi = g_form.getValue('place_money');
+	var qita = g_form.getValue('other_money');
+	var renshu = g_form.getValue('perosn_num');
+	var renjun = parseFloat(qita) =="" ? parseFloat(changdi)/renshu : (parseFloat(changdi) + parseFloat(qita))/renshu;
+	//清除原有表单数据
+			g_form.clearValue('money_of_person');
+			//在表单中设定新数据,并保留小数点后两位。
+			g_form.setValue('money_of_person',parseFloat(renjun).toFixed(2));
+	//2.扣除用户费用
+	g_form.getReference('game_name' , doAlert);
+	
+}
+function doAlert(record){
+	//alert(record.game_name + record.game_persons);
+	var dc = new GlideAjax('DeductCost');
+	jslog("xxxxxxxxxxxxxxxxxxxxxxxxx" + record.game_persons);
+// 	dc.addParam('sysparm_name','minusCost');
+// 	dc.addParam('sysparm_userId','25ba4bf81ba31010dca897d7bd4bcb5b');
+// 	//jslog('kkkkkkkkkkkkkk' + record.game_persons);
+// 	dc.getXML(deCost);
+	for (var i = 0; i < record.game_persons.split(',').length; i++) {
+		var item = record.game_persons.split(',')[i];
+           jslog("111111111" + item);
+			var user = new GlideRecord("x_532560_sport_user");
+		jslog("zzzzzzzzzzzzzzz" + user);
+			user.addQuery("sys_id",item);
+			user.query(recResponse);
+        }
+	
+// 	for(var item in record.game_persons.split(',')){
+// 		jslog("111111111" + item);
+// // 		user.addQuery("sys_id","=",item);
+// // 		user.query();
+// // 		jslog("2222222222" + user.name);
+// 	}
+	
+	
+// 	function deCost(response){
+// 		var persons = response.responseXML.documentElement.getAttribute("answer");
+// 		jslog('OKOKOKOKO' + persons);
+// 	}
+}
+function recResponse(rec) {
+ jslog("3333333333" + rec.name);
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 05:25:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d0a11c111b235010dca897d7bd4bcb07</sys_id>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_name>Deduct the cost</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Sport" source="x_532560_sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_scope>
+        <sys_update_name>sys_script_client_d0a11c111b235010dca897d7bd4bcb07</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 07:34:17</sys_updated_on>
+        <table>x_532560_sport_money</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Sport">c441aa7c1b231010dca897d7bd4bcb8e</application>
+        <file_path/>
+        <instance_id>3b757fa4db03bb009df22f17d4961913</instance_id>
+        <instance_name>dev90111</instance_name>
+        <name>sys_script_client_d0a11c111b235010dca897d7bd4bcb07</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;比赛完成后计算人均费用，按照参赛用户扣取费用&lt;/description&gt;&lt;field&gt;sys_class_name&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Deduct the cost&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+	//1.计算人均费用
+   var changdi = g_form.getValue('place_money');
+	var qita = g_form.getValue('other_money');
+	var renshu = g_form.getValue('perosn_num');
+	var renjun = parseFloat(qita) =="" ? parseFloat(changdi)/renshu : (parseFloat(changdi) + parseFloat(qita))/renshu;
+	//清除原有表单数据
+			g_form.clearValue('money_of_person');
+			//在表单中设定新数据,并保留小数点后两位。
+			g_form.setValue('money_of_person',parseFloat(renjun).toFixed(2));
+	//2.扣除用户费用
+	g_form.getReference('game_name' , doAlert);
+	
+}
+function doAlert(record){
+	//alert(record.game_name + record.game_persons);
+	var dc = new GlideAjax('DeductCost');
+	jslog("xxxxxxxxxxxxxxxxxxxxxxxxx" + record.game_persons);
+// 	dc.addParam('sysparm_name','minusCost');
+// 	dc.addParam('sysparm_userId','25ba4bf81ba31010dca897d7bd4bcb5b');
+// 	//jslog('kkkkkkkkkkkkkk' + record.game_persons);
+// 	dc.getXML(deCost);
+	for (var i = 0; i &lt; record.game_persons.split(',').length; i++) {
+		var item = record.game_persons.split(',')[i];
+           jslog("111111111" + item);
+			var user = new GlideRecord("x_532560_sport_user");
+		jslog("zzzzzzzzzzzzzzz" + user);
+			user.addQuery("sys_id",item);
+			user.query(recResponse);
+        }
+	
+// 	for(var item in record.game_persons.split(',')){
+// 		jslog("111111111" + item);
+// // 		user.addQuery("sys_id","=",item);
+// // 		user.query();
+// // 		jslog("2222222222" + user.name);
+// 	}
+	
+	
+// 	function deCost(response){
+// 		var persons = response.responseXML.documentElement.getAttribute("answer");
+// 		jslog('OKOKOKOKO' + persons);
+// 	}
+}
+function recResponse(rec) {
+ jslog("3333333333" + rec.name);
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-09-28 05:25:07&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;d0a11c111b235010dca897d7bd4bcb07&lt;/sys_id&gt;&lt;sys_mod_count&gt;29&lt;/sys_mod_count&gt;&lt;sys_name&gt;Deduct the cost&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Sport" source="x_532560_sport"&gt;c441aa7c1b231010dca897d7bd4bcb8e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Sport"&gt;c441aa7c1b231010dca897d7bd4bcb8e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_d0a11c111b235010dca897d7bd4bcb07&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-09-28 07:34:17&lt;/sys_updated_on&gt;&lt;table&gt;x_532560_sport_money&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1860263793</payload_hash>
+        <record_name>Deduct the cost</record_name>
+        <reverted_from/>
+        <source>5c41aa7c1b231010dca897d7bd4bcb90</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 07:34:17</sys_created_on>
+        <sys_id>0da0b0951b635010dca897d7bd4bcb6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>174d3a235960000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 07:34:17</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>85a0b09524635010dc7d784d39ea1a6b</update_guid>
+        <update_guid_history>85a0b09524635010dc7d784d39ea1a6b:-1860263793,20ff2c5507635010f6655a81993f60ea:-833566919,a8cf64159963501060ca2655c016f1a0:-522664878,1c9f6415e66350108a8237d328e6c09a:-151544196,cddde415ed635010677337f1220decc4:1250612712,3c7d2015dc635010f3bfd1782fb0878d:393304902,872decd175635010f2eaf54f0bdd0ec1:-1923277823,98ec2cd1af6350103a734a90115b944d:-555274789,f47ce0d11263501074830563ca6a3933:-153830009,7a0c60d16563501073c9c11c59614049:-1560300832,54db60914063501024b8ff523b40d83b:592099906,3e7bac51af6350103f3ff48cea2a7abc:2001807708,866a2c11e3635010d4a13403c5d9a819:-1434500885,b02a6c519d635010bbfbafdb2721dfc0:-1023175106,45d9e811b46350103b1a980df3bddeb5:659413671,6bf5ec9d0b23501044a588302a8b2cbc:1957164763,3934605d20235010c69ee95ee84e5601:-136288197,a4e0e4d9802350104003b363b570260a:1761319041,566c58d57f2350102194b3de81ecde61:247326621,3689d09559235010d32457f50aba1a05:1761319041,5919509508235010554c023b069d3534:-1343270703,86f89c554d235010fa557e2994e6bc74:1848058714,cfc81c55a42350108e525b82c1225a5f:-262301126,50a8d05594235010ce0e29c862cd1345:-594088819,7e68d855e7235010338bbf5d434abc76:-2017016646,d615dc91c4235010a907ff8584e1c881:-471757758,8f05d891292350103302084cca0daeba:1965300259,3b34dc91b5235010e9e030538763ec7c:1852533101,dc145c917b235010112ca400b20b4e01:-681821394,0d131c116623501038bc994f29003b60:-1276799644</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 08:49:47</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>17ae76601d914f509ab929dbaed97410</sys_id>
+        <sys_metadata>d0a11c111b235010dca897d7bd4bcb07</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Deduct the cost</sys_name>
+        <sys_package display_value="Sport" source="x_532560_sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_package>
+        <sys_parent display_value="money">171aeab41b631010dca897d7bd4bcbff</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_scope>
+        <sys_scope_delete display_value="">1e2d80df476046228bffb2c2a96b4a21</sys_scope_delete>
+        <sys_update_name>sys_script_client_d0a11c111b235010dca897d7bd4bcb07</sys_update_name>
+        <sys_update_version display_value="sys_script_client_d0a11c111b235010dca897d7bd4bcb07">0da0b0951b635010dca897d7bd4bcb6b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 08:49:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

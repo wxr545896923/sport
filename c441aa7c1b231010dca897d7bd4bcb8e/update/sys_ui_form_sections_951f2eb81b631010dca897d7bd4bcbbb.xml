@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="951f2eb81b631010dca897d7bd4bcbbb" sys_domain="global" table="x_532560_sport_record" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-09-27 03:29:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d51f2eb81b631010dca897d7bd4bcbbe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_532560_sport_record" name="x_532560_sport_record" sys_domain="global" view="Default view">951f2eb81b631010dca897d7bd4bcbbb</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_532560_sport_record" sys_domain="global" view="Default view">acdd22781b631010dca897d7bd4bcbdb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-09-27 03:29:45</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-09-27 03:29:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d11f2eb81b631010dca897d7bd4bcbbf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_532560_sport_record" name="x_532560_sport_record" sys_domain="global" view="Default view">951f2eb81b631010dca897d7bd4bcbbb</sys_ui_form>
+            <sys_ui_section caption="比赛数据" display_value="比赛数据" name="x_532560_sport_record" sys_domain="global" view="Default view">551f2eb81b631010dca897d7bd4bcbba</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-09-27 03:29:45</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-09-27 05:16:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>be770bb81ba31010dca897d7bd4bcbae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_532560_sport_record" name="x_532560_sport_record" sys_domain="global" view="Default view">951f2eb81b631010dca897d7bd4bcbbb</sys_ui_form>
+            <sys_ui_section caption="讨论" display_value="讨论" name="x_532560_sport_record" sys_domain="global" view="Default view">be770bb81ba31010dca897d7bd4bcbab</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-09-27 05:16:21</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_532560_sport_record</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-09-27 03:29:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>951f2eb81b631010dca897d7bd4bcbbb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_532560_sport_record</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Sport" source="x_532560_sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_scope>
+            <sys_update_name>sys_ui_form_sections_951f2eb81b631010dca897d7bd4bcbbb</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-09-27 03:29:45</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="record" max_length="40" name="x_532560_sport_record" sizeclass="6" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="结束时间" mandatory="true" max_length="40" name="game_end_time" type="glide_date_time"/>
+        <element default="0" label="本场比赛预计消费" mandatory="true" max_length="15" name="game_money" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="场次" mandatory="true" max_length="40" name="game_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="队员列表" max_length="40" name="game_persons" reference="x_532560_sport_user" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="比赛地点" mandatory="true" max_length="40" name="game_place" reference="x_532560_sport_place" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="比赛结果" max_length="40" name="game_result" type="string">
+            <choice>
+                <element inactive_on_update="false" label="失败" sequence="0" value="失败"/>
+                <element inactive_on_update="false" label="胜利" sequence="1" value="胜利"/>
+                <element inactive_on_update="false" label="打平" sequence="2" value="打平"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="比分" max_length="40" name="game_score" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="开始时间" mandatory="true" max_length="40" name="game_start_time" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="未开始" label="比赛状态" mandatory="true" max_length="40" name="game_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="未开始" sequence="0" value="未开始"/>
+                <element inactive_on_update="false" label="已结束" sequence="1" value="已结束"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="比赛编号" mandatory="true" max_length="40" name="number" type="string"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element label="赛事留言板" max_length="1000" name="talk" type="journal_input"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

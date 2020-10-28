@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_view">
+    <sys_sg_item_view action="INSERT_OR_UPDATE">
+        <data_item display_value="Sport record">fabbaef41b631010dca897d7bd4bcbfe</data_item>
+        <dependency_fields>game_end_time,game_money,game_name,game_persons,game_place,game_result</dependency_fields>
+        <item_view_json>{"Children":[{"Children":[{"Children":[{"Text":"","Font":{"Weight":"semibold","Size":13},"TextColor":"#293e40","Width":100,"Height":21,"BackgroundColor":"#f1f1f1","CornerRadius":2,"CellId":"game_end_time","TextAlignment":"Center","MaxLines":1,"studio_template_field_id":"E1","Type":"Text"}],"Orientation":"Vertical","Alignment":"Left","Distribution":"Auto","Margin":{"Right":12},"Type":"ViewGroup"},{"Children":[{"Text":"","Font":{"Weight":"regular","Size":13},"TextColor":"#7d8a8c","CellId":"game_money","TextAlignment":"Right","MaxLines":1,"studio_template_field_id":"E2","Type":"Text"}],"Orientation":"Vertical","Alignment":"Right","Distribution":"Auto","Type":"ViewGroup"}],"Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Equal","Type":"ViewGroup"},{"Text":"","Font":{"Weight":"regular","Size":18},"TextColor":"#293e40","CellId":"game_name","TextAlignment":"Left","MaxLines":2,"studio_template_field_id":"E3","Margin":{"Top":9},"Type":"Text"},{"Children":[{"Children":[{"Text":"${game_persons}","studio_template_is_label":true,"Font":{"Weight":"regular","Size":13},"TextColor":"#7d8a8c","TextAlignment":"Left","MaxLines":1,"studio_template_field_id":"E4","Margin":{"Right":8},"Type":"Text"},{"Width":22,"Height":22,"CornerRadius":11,"CellId":"game_place","Scaling":"Fill","studio_template_field_id":"E5","Margin":{"Right":6},"Type":"Image"},{"Text":"","Font":{"Weight":"regular","Size":13},"TextColor":"#293e40","CellId":"game_persons","TextAlignment":"Left","MaxLines":1,"studio_template_field_id":"E4","Type":"Text"}],"Orientation":"Horizontal","Alignment":"Center","Distribution":"Auto","Margin":{"Top":9},"Type":"ViewGroup"},{"Children":[{"Text":"${game_result}","studio_template_is_label":true,"Font":{"Weight":"regular","Size":13},"TextColor":"#7d8a8c","TextAlignment":"Left","MaxLines":1,"studio_template_field_id":"E6","Margin":{"Right":8},"Type":"Text"},{"Text":"","Font":{"Weight":"regular","Size":13},"TextColor":"#293e40","CellId":"game_result","TextAlignment":"Left","MaxLines":1,"studio_template_field_id":"E6","Type":"Text"}],"Orientation":"Horizontal","Alignment":"Center","Distribution":"Auto","Margin":{"Top":7},"Type":"ViewGroup"}],"Orientation":"Vertical","Alignment":"Left","Distribution":"Auto","Type":"ViewGroup"}],"Orientation":"Vertical","Alignment":"Stretch","Distribution":"Auto","studio_card_id":"9599488923452300a8ed7f4fc7bf652e","Margin":{"Top":17,"Bottom":15},"Type":"ViewGroup"}</item_view_json>
+        <name>record Detail Screen Item View</name>
+        <short_description/>
+        <sys_class_name>sys_sg_item_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-27 03:15:06</sys_created_on>
+        <sys_id>fabbaef41b631010dca897d7bd4bcbff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>record Detail Screen Item View</sys_name>
+        <sys_package display_value="Sport" source="x_532560_sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_scope>
+        <sys_update_name>sys_sg_item_view_fabbaef41b631010dca897d7bd4bcbff</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-27 03:15:06</sys_updated_on>
+        <table>x_532560_sport_record</table>
+        <ui_styles/>
+    </sys_sg_item_view>
+    <sys_translated_text action="delete_multiple" query="documentkey=fabbaef41b631010dca897d7bd4bcbff"/>
+</record_update>

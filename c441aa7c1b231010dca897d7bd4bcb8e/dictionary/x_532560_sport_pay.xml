@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Pay" max_length="40" name="x_532560_sport_pay" sizeclass="25" type="collection">
+        <element label="缴费日期" mandatory="true" max_length="40" name="date" type="glide_date_time"/>
+        <element label="缴费金额" mandatory="true" max_length="20" name="money" type="decimal"/>
+        <element label="球员" max_length="32" name="name" reference="x_532560_sport_user" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="缴费编号" max_length="40" name="number" read_only="true" type="string"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <index name="index">
+            <element name="name"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

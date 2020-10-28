@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="DELETE">
+        <action_name>提交</action_name>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>true</form_context_menu>
+        <form_link>true</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>true</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>true</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>提交</name>
+        <onclick/>
+        <order>100</order>
+        <script/>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-09 08:56:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ddac21381bf75010dca897d7bd4bcb7b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>提交</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Sport" source="x_532560_sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_scope>
+        <sys_update_name>sys_ui_action_ddac21381bf75010dca897d7bd4bcb7b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-09 09:02:40</sys_updated_on>
+        <table>x_532560_sport_data</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Sport">c441aa7c1b231010dca897d7bd4bcb8e</application>
+        <file_path/>
+        <instance_id>3b757fa4db03bb009df22f17d4961913</instance_id>
+        <instance_name>dev90111</instance_name>
+        <name>sys_ui_action_ddac21381bf75010dca897d7bd4bcb7b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;提交&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition/&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;true&lt;/form_context_menu&gt;&lt;form_link&gt;true&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;hint/&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;true&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;true&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;提交&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;100&lt;/order&gt;&lt;script/&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-10-09 08:56:15&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;ddac21381bf75010dca897d7bd4bcb7b&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;提交&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Sport" source="x_532560_sport"&gt;c441aa7c1b231010dca897d7bd4bcb8e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Sport"&gt;c441aa7c1b231010dca897d7bd4bcb8e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_ddac21381bf75010dca897d7bd4bcb7b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-10-09 09:02:40&lt;/sys_updated_on&gt;&lt;table&gt;x_532560_sport_data&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1049544102</payload_hash>
+        <record_name>提交</record_name>
+        <reverted_from/>
+        <source>5c41aa7c1b231010dca897d7bd4bcb90</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-09 09:02:40</sys_created_on>
+        <sys_id>f65e2d3c1bf75010dca897d7bd4bcb6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1750c9913ea0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-09 09:02:40</sys_updated_on>
+        <type>UI Action</type>
+        <update_guid>725e2d3cc4f750106dae39b8bd2f4e6f</update_guid>
+        <update_guid_history>725e2d3cc4f750106dae39b8bd2f4e6f:1049544102,984ee9f8bef75010e9a57dcf1e9c5b8a:1052223126,e22e693c04f750108f9d744b0ff81562:1324845825,c1eca9f84af75010430ec28f9bb7b454:2091526604</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-09 09:15:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_action">sys_ui_action</sys_db_object>
+        <sys_id>5f751f8502384dac9a78e29dbcebaba4</sys_id>
+        <sys_metadata>ddac21381bf75010dca897d7bd4bcb7b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>提交</sys_name>
+        <sys_package display_value="Sport" source="x_532560_sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_package>
+        <sys_parent display_value="data">6ecae2f41b631010dca897d7bd4bcb5a</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_scope>
+        <sys_scope_delete display_value="">1e2d80df476046228bffb2c2a96b4a21</sys_scope_delete>
+        <sys_update_name>sys_ui_action_ddac21381bf75010dca897d7bd4bcb7b</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_ddac21381bf75010dca897d7bd4bcb7b">f65e2d3c1bf75010dca897d7bd4bcb6f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-09 09:15:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

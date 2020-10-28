@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="place" max_length="40" name="x_532560_sport_place" sizeclass="3" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="场地编号" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="详细地址" max_length="100" name="place_detail" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="场地名称" mandatory="true" max_length="40" name="place_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="场地要求" max_length="100" name="place_roles" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="使用模式" max_length="40" name="place_user_mode" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="包场" sequence="0" value="包场"/>
+                <element inactive_on_update="false" label="散场" sequence="1" value="散场"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

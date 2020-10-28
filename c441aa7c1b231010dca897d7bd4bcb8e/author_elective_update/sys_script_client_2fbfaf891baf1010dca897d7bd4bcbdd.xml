@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>当提交数据时，计算出本场次人均消费额。</description>
+        <field>other_money</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages>人均消费计算完成。</messages>
+        <name>Calculate per capita consumption</name>
+        <order/>
+        <script><![CDATA[function onChange() {
+   //Type appropriate comment here, and begin script below
+   var changdi = g_form.getValue('place_money');
+	var qita = g_form.getValue('other_money');
+	var renshu = g_form.getValue('perosn_num');
+	var renjun = (parseFloat(changdi) + parseFloat(qita))/renshu;
+	alert("人均消费：" + renjun +"元。");
+	//清除原有表单数据
+			g_form.clearValue('money_of_person');
+			//在表单中设定新数据
+			g_form.setValue('money_of_person',renjun);
+	}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 03:02:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2fbfaf891baf1010dca897d7bd4bcbdd</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Calculate per capita consumption</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Sport" source="x_532560_sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_scope>
+        <sys_update_name>sys_script_client_2fbfaf891baf1010dca897d7bd4bcbdd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 03:17:01</sys_updated_on>
+        <table>x_532560_sport_money</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Sport">c441aa7c1b231010dca897d7bd4bcb8e</application>
+        <file_path/>
+        <instance_id>3b757fa4db03bb009df22f17d4961913</instance_id>
+        <instance_name>dev90111</instance_name>
+        <name>sys_script_client_2fbfaf891baf1010dca897d7bd4bcbdd</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;当提交数据时，计算出本场次人均消费额。&lt;/description&gt;&lt;field&gt;other_money&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages&gt;人均消费计算完成。&lt;/messages&gt;&lt;name&gt;Calculate per capita consumption&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange() {
+   //Type appropriate comment here, and begin script below
+   var changdi = g_form.getValue('place_money');
+	var qita = g_form.getValue('other_money');
+	var renshu = g_form.getValue('perosn_num');
+	var renjun = (parseFloat(changdi) + parseFloat(qita))/renshu;
+	alert("人均消费：" + renjun +"元。");
+	//清除原有表单数据
+			g_form.clearValue('money_of_person');
+			//在表单中设定新数据
+			g_form.setValue('money_of_person',renjun);
+	}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-09-28 03:02:37&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;2fbfaf891baf1010dca897d7bd4bcbdd&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Calculate per capita consumption&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Sport" source="x_532560_sport"&gt;c441aa7c1b231010dca897d7bd4bcb8e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Sport"&gt;c441aa7c1b231010dca897d7bd4bcb8e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_2fbfaf891baf1010dca897d7bd4bcbdd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-09-28 03:17:01&lt;/sys_updated_on&gt;&lt;table&gt;x_532560_sport_money&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1615104238</payload_hash>
+        <record_name>Calculate per capita consumption</record_name>
+        <reverted_from/>
+        <source>5c41aa7c1b231010dca897d7bd4bcb90</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 03:17:01</sys_created_on>
+        <sys_id>e0c577cd1baf1010dca897d7bd4bcb1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>174d2b6af860000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 03:17:01</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>6cc577cda3af1010f20760cd79542019</update_guid>
+        <update_guid_history>6cc577cda3af1010f20760cd79542019:1615104238,fb157f8d96af1010a7dab26b6c0bb7eb:-1587425346,13347f4df6af101068b218bd0e0d205e:2011526770,a593774de8af10102f3c7645a8fffd4e:-1537572224,96d27b89daaf1010e9dd3c0edb60f21c:-507436888,2d723f0d97af1010aae8e3e8691666bd:580821974</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-28 03:18:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>04b8554beded4214a0c36d13718ee921</sys_id>
+        <sys_metadata>2fbfaf891baf1010dca897d7bd4bcbdd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Calculate per capita consumption</sys_name>
+        <sys_package display_value="Sport" source="x_532560_sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_package>
+        <sys_parent display_value="money">171aeab41b631010dca897d7bd4bcbff</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_scope>
+        <sys_scope_delete display_value="">1e2d80df476046228bffb2c2a96b4a21</sys_scope_delete>
+        <sys_update_name>sys_script_client_2fbfaf891baf1010dca897d7bd4bcbdd</sys_update_name>
+        <sys_update_version display_value="sys_script_client_2fbfaf891baf1010dca897d7bd4bcbdd">e0c577cd1baf1010dca897d7bd4bcb1a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 03:18:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

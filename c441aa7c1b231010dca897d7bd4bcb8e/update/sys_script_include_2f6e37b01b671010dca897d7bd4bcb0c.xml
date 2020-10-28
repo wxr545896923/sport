@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_532560_sport.GetPersonsOfRecord</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>根据记录ID获取当前记录中的球员信息</description>
+        <name>GetPersonsOfRecord</name>
+        <script><![CDATA[//创建类对象
+var GetPersonsOfRecord = Class.create();
+//继承AJAX对象
+GetPersonsOfRecord.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	//设定回调函数
+	getPersons: function() {
+			//取得全部数据
+			var record = new GlideRecord("x_532560_sport_record");
+			//根据入力参数取得指定数据
+			record.get(this.getParameter('sysparm_recordId'));
+			//返回查询对象
+			return record.game_persons;
+		},
+    type: 'GetPersonsOfRecord'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-27 09:18:20</sys_created_on>
+        <sys_id>2f6e37b01b671010dca897d7bd4bcb0c</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>GetPersonsOfRecord</sys_name>
+        <sys_package display_value="Sport" source="x_532560_sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_scope>
+        <sys_update_name>sys_script_include_2f6e37b01b671010dca897d7bd4bcb0c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 02:48:14</sys_updated_on>
+    </sys_script_include>
+</record_update>

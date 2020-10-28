@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>Pay</name>
+        <order>100</order>
+        <roles>x_532560_sport.pay_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-27 06:18:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>46c513741be31010dca897d7bd4bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pay</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Sport" source="x_532560_sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_scope>
+        <sys_update_name>sys_app_application_46c513741be31010dca897d7bd4bcba3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-27 06:18:50</sys_updated_on>
+        <title>Pay</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Sport">c441aa7c1b231010dca897d7bd4bcb8e</application>
+        <file_path/>
+        <instance_id>3b757fa4db03bb009df22f17d4961913</instance_id>
+        <instance_name>dev90111</instance_name>
+        <name>sys_app_application_46c513741be31010dca897d7bd4bcba3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>Pay</name><order>100</order><roles>x_532560_sport.pay_user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-09-27 06:18:50</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>46c513741be31010dca897d7bd4bcba3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Pay</sys_name><sys_overrides/><sys_package display_value="Sport" source="x_532560_sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_package><sys_policy/><sys_scope display_value="Sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_scope><sys_update_name>sys_app_application_46c513741be31010dca897d7bd4bcba3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-09-27 06:18:50</sys_updated_on><title>Pay</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>23158653</payload_hash>
+        <record_name>Pay</record_name>
+        <reverted_from/>
+        <source>5c41aa7c1b231010dca897d7bd4bcb90</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-27 06:18:50</sys_created_on>
+        <sys_id>c6c513741be31010dca897d7bd4bcba6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>174ce36c6b80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-27 06:18:50</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>02c51374fae310107759126074597da6</update_guid>
+        <update_guid_history>02c51374fae310107759126074597da6:23158653</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Pay">89b75bb41be31010dca897d7bd4bcb8b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-27 06:27:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>2fe3652b55654d8f8887c124e6db1441</sys_id>
+        <sys_metadata>46c513741be31010dca897d7bd4bcba3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pay</sys_name>
+        <sys_package display_value="Sport" source="x_532560_sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_scope>
+        <sys_scope_delete display_value="">1e2d80df476046228bffb2c2a96b4a21</sys_scope_delete>
+        <sys_update_name>sys_app_application_46c513741be31010dca897d7bd4bcba3</sys_update_name>
+        <sys_update_version display_value="sys_app_application_46c513741be31010dca897d7bd4bcba3">c6c513741be31010dca897d7bd4bcba6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-27 06:27:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

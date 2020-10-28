@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="">Custom Applications</category>
+        <description>球队管理系统</description>
+        <device_type>browser</device_type>
+        <hint>球队管理系统</hint>
+        <name/>
+        <order/>
+        <roles>x_532560_sport.sport_admin</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-27 03:15:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>21db2e7c1b231010dca897d7bd4bcb69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sport</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Sport" source="x_532560_sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sport">c441aa7c1b231010dca897d7bd4bcb8e</sys_scope>
+        <sys_update_name>sys_app_application_21db2e7c1b231010dca897d7bd4bcb69</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-27 03:15:34</sys_updated_on>
+        <title>Sport</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>
